@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- كود التحقق من جوجل الصحيح والمطابق تماماً -->
-    <meta name="google-site-verification" content="google6813b0b3fcd7e113" />
+    
+    <!-- كود التحقق من جوجل -->
+    <meta name="google-site-verification" content="BgvHjHMLWHxcvdkBix57ehVu7Sa5o8u0_sg9WAny2-M" />
+    
     <title>Mohamed Samaha Coach | كابتن محمد سماحة - التدريب الأونلاين والتغذية</title>
     
     <!-- Google Fonts & Icons -->
@@ -14,15 +16,16 @@
     
     <style>
         :root {
-            --bg-color: #0b0f19;
-            --card-bg: #151c2c;
-            --accent-gold: #fbbf24;
-            --accent-glow: #f59e0b;
-            --text-main: #f8fafc;
+            --bg-color: #060913;
+            --card-bg: #0d1424;
+            --accent-neon: #00ff66;
+            --accent-cyan: #00e5ff;
+            --accent-glow: rgba(0, 255, 102, 0.4);
+            --text-main: #ffffff;
             --text-muted: #94a3b8;
             --border-color: #1e293b;
-            --whatsapp-color: #22c55e;
-            --error-color: #ef4444;
+            --whatsapp-color: #25d366;
+            --error-color: #ff3366;
         }
 
         * {
@@ -56,14 +59,14 @@
             align-items: center;
             justify-content: center;
             font-size: 2rem;
-            box-shadow: 0 4px 20px rgba(34, 197, 94, 0.4);
+            box-shadow: 0 0 20px rgba(37, 211, 102, 0.6);
             z-index: 9999;
             transition: 0.3s;
         }
 
         .floating-whatsapp:hover {
             transform: scale(1.1);
-            background: #16a34a;
+            box-shadow: 0 0 30px rgba(37, 211, 102, 0.9);
         }
 
         /* Header Navigation */
@@ -71,28 +74,31 @@
             position: fixed;
             top: 0;
             width: 100%;
-            background: rgba(11, 15, 25, 0.95);
+            background: rgba(6, 9, 19, 0.95);
             backdrop-filter: blur(12px);
-            border-bottom: 1px solid var(--border-color);
+            border-bottom: 1px solid rgba(0, 255, 102, 0.2);
             z-index: 1000;
             padding: 1rem 5%;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            gap: 15px;
         }
 
         .logo {
-            font-size: 1.4rem;
+            font-size: 1.3rem;
             font-weight: 900;
             color: var(--text-main);
             text-decoration: none;
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: 6px;
+            white-space: nowrap;
         }
 
         .logo span {
-            color: var(--accent-gold);
+            color: var(--accent-neon);
+            text-shadow: 0 0 10px var(--accent-glow);
         }
 
         .nav-links {
@@ -104,32 +110,34 @@
         .nav-links a {
             color: var(--text-muted);
             text-decoration: none;
-            font-weight: 600;
+            font-weight: 700;
             font-size: 0.95rem;
             transition: 0.3s;
         }
 
         .nav-links a:hover {
-            color: var(--accent-gold);
+            color: var(--accent-neon);
+            text-shadow: 0 0 8px var(--accent-glow);
         }
 
         .cta-btn {
-            background: linear-gradient(135deg, var(--accent-gold), var(--accent-glow));
+            background: linear-gradient(135deg, var(--accent-neon), var(--accent-cyan));
             color: #000;
             padding: 0.6rem 1.4rem;
             border-radius: 30px;
             text-decoration: none;
-            font-weight: 700;
+            font-weight: 800;
             transition: 0.3s;
-            box-shadow: 0 4px 15px rgba(251, 191, 36, 0.3);
+            box-shadow: 0 0 15px var(--accent-glow);
             display: inline-flex;
             align-items: center;
             gap: 8px;
+            white-space: nowrap;
         }
 
         .cta-btn:hover {
             transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(251, 191, 36, 0.5);
+            box-shadow: 0 0 25px rgba(0, 255, 102, 0.8);
         }
 
         /* Hero Section */
@@ -158,11 +166,11 @@
             max-width: 380px;
             height: 480px;
             border-radius: 24px;
-            border: 2px solid var(--accent-gold);
+            border: 2px solid var(--accent-neon);
             background: var(--card-bg);
             overflow: hidden;
             position: relative;
-            box-shadow: 0 0 30px rgba(251, 191, 36, 0.25);
+            box-shadow: 0 0 30px var(--accent-glow);
         }
 
         .hero-img-box img {
@@ -179,21 +187,23 @@
 
         .badge {
             display: inline-block;
-            background: rgba(251, 191, 36, 0.1);
-            color: var(--accent-gold);
+            background: rgba(0, 255, 102, 0.1);
+            color: var(--accent-neon);
             padding: 6px 16px;
             border-radius: 20px;
-            border: 1px solid rgba(251, 191, 36, 0.3);
+            border: 1px solid rgba(0, 255, 102, 0.4);
             font-size: 0.9rem;
             font-weight: 700;
             margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 255, 102, 0.2);
         }
 
         .global-badge {
-            background: rgba(34, 197, 94, 0.15);
-            color: #4ade80;
-            border: 1px solid rgba(34, 197, 94, 0.3);
+            background: rgba(0, 229, 255, 0.1);
+            color: var(--accent-cyan);
+            border: 1px solid rgba(0, 229, 255, 0.4);
             margin-right: 8px;
+            box-shadow: 0 0 10px rgba(0, 229, 255, 0.2);
         }
 
         .hero-title {
@@ -204,7 +214,8 @@
         }
 
         .hero-title span {
-            color: var(--accent-gold);
+            color: var(--accent-neon);
+            text-shadow: 0 0 15px var(--accent-glow);
         }
 
         .hero-desc {
@@ -223,25 +234,27 @@
         .secondary-btn {
             background: transparent;
             color: var(--text-main);
-            border: 1px solid var(--border-color);
+            border: 1px solid var(--accent-cyan);
             padding: 0.6rem 1.4rem;
             border-radius: 30px;
             text-decoration: none;
             font-weight: 700;
             transition: 0.3s;
+            box-shadow: 0 0 10px rgba(0, 229, 255, 0.2);
         }
 
         .secondary-btn:hover {
-            border-color: var(--accent-gold);
-            color: var(--accent-gold);
+            border-color: var(--accent-neon);
+            color: var(--accent-neon);
+            box-shadow: 0 0 15px var(--accent-glow);
         }
 
         /* Stats Section */
         .stats-section {
-            background: #0d1322;
+            background: #080d1a;
             padding: 40px 5%;
-            border-top: 1px solid var(--border-color);
-            border-bottom: 1px solid var(--border-color);
+            border-top: 1px solid rgba(0, 255, 102, 0.2);
+            border-bottom: 1px solid rgba(0, 255, 102, 0.2);
             display: flex;
             justify-content: space-around;
             align-items: center;
@@ -252,7 +265,8 @@
 
         .stat-box h3 {
             font-size: 2.5rem;
-            color: var(--accent-gold);
+            color: var(--accent-neon);
+            text-shadow: 0 0 10px var(--accent-glow);
             font-weight: 900;
             margin-bottom: 5px;
         }
@@ -267,24 +281,25 @@
         .philosophy {
             padding: 80px 5%;
             text-align: center;
-            background: linear-gradient(180deg, var(--bg-color), #0d1322);
+            background: linear-gradient(180deg, var(--bg-color), #080d1a);
         }
 
         .philosophy-card {
             max-width: 800px;
             margin: 0 auto;
             background: var(--card-bg);
-            border: 1px solid var(--border-color);
+            border: 1px solid rgba(0, 255, 102, 0.3);
             border-radius: 20px;
             padding: 40px;
             position: relative;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+            box-shadow: 0 0 25px rgba(0, 255, 102, 0.15);
         }
 
         .philosophy-card i {
             font-size: 2.5rem;
-            color: var(--accent-gold);
+            color: var(--accent-cyan);
             margin-bottom: 20px;
+            text-shadow: 0 0 15px rgba(0, 229, 255, 0.6);
         }
 
         .philosophy-card h3 {
@@ -307,8 +322,9 @@
 
         .section-title {
             font-size: 2.2rem;
-            font-weight: 800;
+            font-weight: 900;
             margin-bottom: 10px;
+            color: var(--text-main);
         }
 
         .section-subtitle {
@@ -343,8 +359,8 @@
 
         .gallery-item:hover {
             transform: translateY(-8px);
-            border-color: var(--accent-gold);
-            box-shadow: 0 12px 30px rgba(251, 191, 36, 0.2);
+            border-color: var(--accent-neon);
+            box-shadow: 0 0 25px var(--accent-glow);
         }
 
         .gallery-item:hover img {
@@ -356,7 +372,7 @@
             bottom: 0;
             left: 0;
             right: 0;
-            background: linear-gradient(0deg, rgba(11, 15, 25, 0.95) 0%, rgba(11, 15, 25, 0) 100%);
+            background: linear-gradient(0deg, rgba(6, 9, 19, 0.95) 0%, rgba(6, 9, 19, 0) 100%);
             padding: 25px 20px 15px;
             text-align: right;
             color: var(--text-main);
@@ -364,7 +380,7 @@
 
         .gallery-overlay h4 {
             font-size: 1.2rem;
-            color: var(--accent-gold);
+            color: var(--accent-neon);
             margin-bottom: 4px;
         }
 
@@ -376,7 +392,7 @@
         /* Testimonials Section */
         .testimonials {
             padding: 80px 5%;
-            background: rgba(15, 23, 42, 0.5);
+            background: rgba(13, 20, 36, 0.5);
             text-align: center;
         }
 
@@ -402,7 +418,8 @@
 
         .testimonial-card:hover {
             transform: translateY(-5px);
-            border-color: rgba(251, 191, 36, 0.4);
+            border-color: var(--accent-cyan);
+            box-shadow: 0 0 20px rgba(0, 229, 255, 0.3);
         }
 
         .client-info {
@@ -416,8 +433,9 @@
             width: 50px;
             height: 50px;
             border-radius: 50%;
-            background: rgba(251, 191, 36, 0.2);
-            color: var(--accent-gold);
+            background: rgba(0, 255, 102, 0.15);
+            color: var(--accent-neon);
+            border: 1px solid var(--accent-neon);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -432,8 +450,8 @@
 
         .client-meta span {
             font-size: 0.85rem;
-            color: var(--accent-gold);
-            background: rgba(251, 191, 36, 0.1);
+            color: var(--accent-cyan);
+            background: rgba(0, 229, 255, 0.1);
             padding: 2px 8px;
             border-radius: 10px;
         }
@@ -446,39 +464,40 @@
         }
 
         .stars {
-            color: var(--accent-gold);
+            color: #ffcc00;
             margin-bottom: 15px;
             font-size: 0.9rem;
         }
 
         .result-tag {
-            background: rgba(34, 197, 94, 0.1);
-            color: var(--whatsapp-color);
+            background: rgba(0, 255, 102, 0.1);
+            color: var(--accent-neon);
             padding: 8px 12px;
             border-radius: 10px;
             font-weight: 700;
             font-size: 0.9rem;
             text-align: center;
-            border: 1px solid rgba(34, 197, 94, 0.2);
+            border: 1px solid rgba(0, 255, 102, 0.3);
         }
 
         /* Pricing Section */
         .pricing {
             padding: 80px 5%;
-            background: #0d1322;
+            background: #080d1a;
             text-align: center;
         }
 
         .pricing-notice {
-            background: rgba(251, 191, 36, 0.1);
-            border: 1px solid var(--accent-gold);
-            color: var(--accent-gold);
+            background: rgba(0, 255, 102, 0.08);
+            border: 1px solid var(--accent-neon);
+            color: var(--accent-neon);
             padding: 12px 20px;
             border-radius: 12px;
             max-width: 700px;
             margin: 0 auto 40px;
             font-weight: 700;
             font-size: 1rem;
+            box-shadow: 0 0 15px rgba(0, 255, 102, 0.15);
         }
 
         .pricing-cards {
@@ -500,8 +519,8 @@
         }
 
         .pricing-card.featured {
-            border-color: var(--accent-gold);
-            box-shadow: 0 0 25px rgba(251, 191, 36, 0.15);
+            border-color: var(--accent-neon);
+            box-shadow: 0 0 25px rgba(0, 255, 102, 0.2);
         }
 
         .pricing-card:hover {
@@ -516,13 +535,13 @@
         .price-text {
             font-size: 1.1rem;
             font-weight: 800;
-            color: var(--accent-gold);
+            color: var(--accent-cyan);
             margin-bottom: 20px;
-            background: rgba(251, 191, 36, 0.08);
+            background: rgba(0, 229, 255, 0.08);
             padding: 8px 12px;
             border-radius: 8px;
             text-align: center;
-            border: 1px dashed rgba(251, 191, 36, 0.3);
+            border: 1px dashed rgba(0, 229, 255, 0.3);
         }
 
         .features-list {
@@ -539,7 +558,7 @@
         }
 
         .features-list li i {
-            color: var(--accent-gold);
+            color: var(--accent-neon);
         }
 
         .book-btn {
@@ -551,19 +570,21 @@
             padding: 12px;
             border-radius: 12px;
             text-decoration: none;
-            font-weight: 700;
+            font-weight: 800;
             transition: 0.3s;
             cursor: pointer;
+            box-shadow: 0 0 15px rgba(37, 211, 102, 0.3);
         }
 
         .book-btn:hover {
-            background: #16a34a;
+            background: #1eb854;
+            box-shadow: 0 0 25px rgba(37, 211, 102, 0.6);
         }
 
         /* Detailed Assessment Section */
         .assessment-section {
             padding: 80px 5%;
-            background: linear-gradient(180deg, #0d1322, var(--bg-color));
+            background: linear-gradient(180deg, #080d1a, var(--bg-color));
             text-align: center;
         }
 
@@ -573,8 +594,8 @@
             background: var(--card-bg);
             padding: 40px;
             border-radius: 20px;
-            border: 1px solid var(--border-color);
-            box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+            border: 1px solid rgba(0, 255, 102, 0.3);
+            box-shadow: 0 0 30px rgba(0, 255, 102, 0.1);
             text-align: right;
         }
 
@@ -608,11 +629,18 @@
             transition: 0.3s;
         }
 
+        .assessment-container input:focus, 
+        .assessment-container select:focus, 
+        .assessment-container textarea:focus {
+            border-color: var(--accent-neon);
+            box-shadow: 0 0 10px var(--accent-glow);
+        }
+
         .assessment-container input.invalid, 
         .assessment-container select.invalid, 
         .assessment-container textarea.invalid {
             border-color: var(--error-color) !important;
-            box-shadow: 0 0 10px rgba(239, 68, 68, 0.4) !important;
+            box-shadow: 0 0 10px rgba(255, 51, 102, 0.5) !important;
         }
 
         .assessment-container textarea {
@@ -621,25 +649,25 @@
         }
 
         .section-box {
-            background: rgba(251, 191, 36, 0.05);
-            border: 1px solid rgba(251, 191, 36, 0.2);
+            background: rgba(0, 255, 102, 0.03);
+            border: 1px solid rgba(0, 255, 102, 0.2);
             padding: 20px;
             border-radius: 15px;
             margin-bottom: 25px;
         }
 
         .section-box h3 {
-            color: var(--accent-gold);
+            color: var(--accent-neon);
             font-size: 1.2rem;
             margin-bottom: 15px;
-            border-bottom: 1px solid rgba(251, 191, 36, 0.2);
+            border-bottom: 1px solid rgba(0, 255, 102, 0.2);
             padding-bottom: 8px;
         }
 
         .form-error-msg {
             color: var(--error-color);
-            background: rgba(239, 68, 68, 0.1);
-            border: 1px solid rgba(239, 68, 68, 0.3);
+            background: rgba(255, 51, 102, 0.1);
+            border: 1px solid rgba(255, 51, 102, 0.3);
             padding: 12px;
             border-radius: 10px;
             margin-bottom: 20px;
@@ -663,12 +691,13 @@
             justify-content: center;
             gap: 10px;
             transition: 0.3s;
-            box-shadow: 0 4px 15px rgba(34, 197, 94, 0.3);
+            box-shadow: 0 0 20px rgba(37, 211, 102, 0.4);
         }
 
         .whatsapp-send-btn:hover {
-            background: #16a34a;
+            background: #1eb854;
             transform: translateY(-2px);
+            box-shadow: 0 0 30px rgba(37, 211, 102, 0.7);
         }
 
         /* FAQ Section */
@@ -704,7 +733,7 @@
         }
 
         .faq-question i {
-            color: var(--accent-gold);
+            color: var(--accent-neon);
             transition: 0.3s;
         }
 
@@ -727,7 +756,7 @@
         .calculator {
             padding: 80px 5%;
             text-align: center;
-            background: #0d1322;
+            background: #080d1a;
         }
 
         .calc-container {
@@ -736,40 +765,41 @@
             background: var(--card-bg);
             padding: 30px;
             border-radius: 20px;
-            border: 1px solid var(--border-color);
+            border: 1px solid rgba(0, 255, 102, 0.3);
             text-align: right;
         }
 
         .calc-btn {
             width: 100%;
-            background: var(--accent-gold);
+            background: linear-gradient(135deg, var(--accent-neon), var(--accent-cyan));
             color: #000;
             padding: 12px;
             border: none;
             border-radius: 10px;
-            font-weight: 700;
+            font-weight: 800;
             font-size: 1rem;
             cursor: pointer;
             transition: 0.3s;
+            box-shadow: 0 0 15px var(--accent-glow);
         }
 
         .calc-btn:hover {
-            background: var(--accent-glow);
+            box-shadow: 0 0 25px rgba(0, 255, 102, 0.7);
         }
 
         .calc-result {
             margin-top: 20px;
             padding: 15px;
-            background: rgba(251, 191, 36, 0.1);
+            background: rgba(0, 255, 102, 0.08);
             border-radius: 10px;
-            border: 1px solid var(--accent-gold);
+            border: 1px solid var(--accent-neon);
             display: none;
             text-align: center;
         }
 
         /* Footer */
         footer {
-            background: #070a12;
+            background: #04060d;
             padding: 40px 5%;
             text-align: center;
             border-top: 1px solid var(--border-color);
@@ -790,14 +820,20 @@
         }
 
         .social-links a:hover {
-            color: var(--accent-gold);
+            color: var(--accent-neon);
         }
 
         @media (max-width: 768px) {
+            header {
+                padding: 0.8rem 4%;
+            }
+            .logo {
+                font-size: 1.1rem;
+            }
             .hero {
                 flex-direction: column;
                 text-align: center;
-                padding-top: 100px;
+                padding-top: 120px;
             }
             .hero-title {
                 font-size: 2rem;
@@ -1226,7 +1262,7 @@
 
             <!-- القسم السادس: التغذية والتاريخ السابق والأدوات -->
             <div class="section-box">
-                <h3>🥗 5. التغذية والتمارين والأدوات المتاحة</h3>
+                <h3>🥗 5. التغذية والتمرين والأدوات المتاحة</h3>
                 <div class="form-group">
                     <label><span class="required-star">*</span> أنظمة الدايت السابقة (وهل تعاني من ثبات الوزن؟):</label>
                     <input type="text" id="clientDietHistory" placeholder="اكتب الدايت السابق أو (لا يوجد / أول مرة)">
@@ -1294,7 +1330,7 @@
 
             <div class="calc-result" id="calc-result">
                 <h3>احتياجك اليومي المحتمل:</h3>
-                <p id="calories-val" style="font-size: 1.8rem; font-weight: 800; color: var(--accent-gold);"></p>
+                <p id="calories-val" style="font-size: 1.8rem; font-weight: 800; color: var(--accent-neon);"></p>
                 <p>سعرة حرارية للحفاظ على الوزن الحالي</p>
             </div>
         </div>
@@ -1452,7 +1488,7 @@
 
             const name = document.getElementById('clientName').value.trim();
             const age = document.getElementById('clientAge').value.trim();
-            const gender = genderVal === 'male' ? 'ذكر' : 'أنثى';
+            const gender = genderVal === 'male' ? 'ذكر 👨' : 'أنثى 👩';
             const weight = document.getElementById('clientWeight').value.trim();
             const height = document.getElementById('clientHeight').value.trim();
             const fatPercentage = document.getElementById('clientFatPercentage').value.trim();
@@ -1485,7 +1521,7 @@
                 const maleSteroidsHistory = document.getElementById('maleSteroidsHistory').value.trim();
                 const maleWorkActivity = document.getElementById('maleWorkActivity').value;
                 
-                specificDetails = `• *تحليل الهرمونات:* ${maleHormone}\n• *تمركز الدهون:* ${maleFatDistribution}\n• *سابقة استخدام الهرمونات:* ${maleSteroidsHistory}\n• *طبيعة النشاط اليومي:* ${maleWorkActivity}\n`;
+                specificDetails = `🧪 *تحليل الهرمونات:* ${maleHormone}\n🎯 *تمركز الدهون:* ${maleFatDistribution}\n💉 *سابقة استخدام الهرمونات:* ${maleSteroidsHistory}\n⚡ *طبيعة النشاط اليومي:* ${maleWorkActivity}\n`;
             } else {
                 const femalePregnancy = document.getElementById('femalePregnancy').value;
                 const femalePeriodRegular = document.getElementById('femalePeriodRegular').value;
@@ -1493,45 +1529,54 @@
                 const femaleFatDistribution = document.getElementById('femaleFatDistribution').value;
                 const femaleWaterRetention = document.getElementById('femaleWaterRetention').value.trim();
                 
-                specificDetails = `• *الحمل والرضاعة:* ${femalePregnancy}\n• *انتظام الدورة الشهرية:* ${femalePeriodRegular}\n• *تكيسات/مقاومة إنسولين:* ${femalePcos}\n• *تمركز الدهون:* ${femaleFatDistribution}\n• *احتباس السوائل:* ${femaleWaterRetention}\n`;
+                specificDetails = `🤰 *الحمل والرضاعة:* ${femalePregnancy}\n🔄 *انتظام الدورة الشهرية:* ${femalePeriodRegular}\n🧬 *تكيسات/مقاومة إنسولين:* ${femalePcos}\n🎯 *تمركز الدهون:* ${femaleFatDistribution}\n💧 *احتباس السوائل:* ${femaleWaterRetention}\n`;
             }
 
             const message = 
-`📋 *استمارة تقييم واشتراك جديدة*
+`🚀 *استمارة اشتراك وتجهيز جديدة*
+━━━━━━━━━━━━━━━━━━━
 🏆 *المدرب:* Mohamed Samaha Coach
-🌍 *البلد:* ${country}
+🌍 *الدولة:* ${country}
+━━━━━━━━━━━━━━━━━━━
 
-📌 *1. البيانات الأساسية:*
+📌 *1. البيانات الأساسية والهدف:*
 👤 *الاسم:* ${name}
-⚧ *النوع:* ${gender} | 🎂 *السن:* ${age} سنة
-⚖️ *الوزن:* ${weight} كجم | 📏 *الطول:* ${height} سم
+⚧ *النوع:* ${gender}
+🎂 *السن:* ${age} سنة
+⚖️ *الوزن:* ${weight} كجم
+📏 *الطول:* ${height} سم
 📊 *نسبة الدهون:* ${fatPercentage}
-📍 *الدولة:* ${country}
 🎯 *الهدف:* ${goal}
-📦 *الباقة:* ${pkg}
+📦 *الباقة المختارة:* ${pkg}
 
+━━━━━━━━━━━━━━━━━━━
 💊 *2. الحالة الصحية والأدوية:*
-• *أمراض مزمنة:* ${diseases}
-• *الأدوية/المكملات:* ${meds}
-• *حساسية الطعام:* ${allergy}
-• *الإصابات:* ${injuries}
+🦠 *أمراض مزمنة:* ${diseases}
+💊 *الأدوية والمكملات:* ${meds}
+🥜 *حساسية الطعام:* ${allergy}
+🩹 *الإصابات والمفاصل:* ${injuries}
 
+━━━━━━━━━━━━━━━━━━━
 ⚙️ *3. الأسئلة التخصصية:*
 ${specificDetails}
-🌙 *4. النوم والعادات اليومية:*
-• *ساعات النوم:* ${sleepHours}
-• *مواعيد النوم:* ${sleepTime}
-• *معدل الماء:* ${waterRate}
-• *الكافيين:* ${caffeine}
-• *التدخين:* ${smoking}
+━━━━━━━━━━━━━━━━━━━
+🌙 *4. النوم، السوائل والعادات:*
+💤 *ساعات النوم:* ${sleepHours}
+⏰ *مواعيد النوم:* ${sleepTime}
+💧 *معدل الماء:* ${waterRate}
+☕ *الكافيين:* ${caffeine}
+🚬 *التدخين:* ${smoking}
 
+━━━━━━━━━━━━━━━━━━━
 🥗 *5. التغذية والتمرين والأدوات:*
-• *أنظمة الدايت السابقة:* ${dietHistory}
-• *عدد الوجبات:* ${mealsCount}
-• *الوجبات السريعة:* ${cheatMeals}
-• *مكان وتفاصيل التمرين:* ${workoutPlace}
-• *الأدوات المتاحة:* ${toolsAvailable}
-• *ملاحظات إضافية:* ${extraNotes}`;
+📋 *أنظمة الدايت السابقة:* ${dietHistory}
+🍽️ *عدد الوجبات:* ${mealsCount}
+🍔 *الوجبات السريعة:* ${cheatMeals}
+🏋️ *مكان وتفاصيل التمرين:* ${workoutPlace}
+⚖️ *الأدوات المتاحة:* ${toolsAvailable}
+📝 *ملاحظات إضافية:* ${extraNotes}
+━━━━━━━━━━━━━━━━━━━
+🔥 *جاهز لبدء التحول وصناعة الفورمة!*`;
 
             const encodedMessage = encodeURIComponent(message);
             const whatsappUrl = `https://wa.me/201153548880?text=${encodedMessage}`;
